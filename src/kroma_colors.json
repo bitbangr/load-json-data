@@ -1,4 +1,4 @@
-{ "name":"Kroma Colour Swatch",
+[{ "name":"Kroma Colour Swatch",
   "url":"https://kromaacrylics.com",
   "description":"RGB mass tone values for Kroma acrylic paints.\nArtist's quality colours made with permanent light fast pigments in 100% acrylic resin.",
   "colors":[
@@ -46,4 +46,4 @@
   { "rgb": [209, 147, 70], "name": "Iridescent Gold", "number": "?" },
   { "rgb": [220, 214, 210], "name": "Pearlescent White", "number": "?" }
   ]
-}
+}]
