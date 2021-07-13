@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Loading data into react App from JSON file located on file system. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
