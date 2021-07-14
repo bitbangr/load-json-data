@@ -59,9 +59,14 @@ const Color = ({ col_name, url, description, colors }) => {
             <h4>There are {colors.length} colours </h4>
           </td>
         </tr>
+        <tr>
+          <th>Colour Name</th>
+          <th>Colour RGB</th>
+          <th>Colour Number</th>
+        </tr>
         {colors.map((sub, subindex) =>
               <tr>  <td key={subindex}>{sub.name}</td>
-                    <td key={subindex}>{sub.rgb}</td>
+                    <td key={subindex}>[{sub.rgb[0]}, {sub.rgb[1]}, {sub.rgb[1]}]</td>
                     <td key={subindex}>{sub.number}</td>
               </tr>)
         }
