@@ -16,6 +16,7 @@ export const Colors = () => {
                 col_name={data.name}
                 url={data.url}
                 description={data.description}
+                colors={data.colors}
               />
               </div>
             );
@@ -24,42 +25,6 @@ export const Colors = () => {
     </>
   );
 };
-
-export const ColorSimple = () => {
-  return (
-    <>
-      <HomePageHeader />
-      <div className="color-container">
-          {colorData.map((data,key) => {
-            return (
-              <div key={key}>
-              <Color
-                key={key}
-                col_name={data.name}
-                url={data.url}
-                description={data.description}
-              />
-              </div>
-
-
-
-            );
-          })}
-      </div>
-      <div>
-        {colorData.colors.map((sub, subindex) =>
-           return (
-              <p key={subindex}>{sub.name +
-                                    ', [' +
-                                  sub.rgb +
-                                    '], ' +
-                                sub.number } </p>);
-        }
-      </div>
-    </>
-  );
-};
-
 
 const HomePageHeader = () => {
   return (
@@ -69,7 +34,7 @@ const HomePageHeader = () => {
   );
 };
 
-const Color = ({ col_name, url, description }) => {
+const Color = ({ col_name, url, description, colors }) => {
   if (!col_name) return <div />;
   return (
     <table>
@@ -87,6 +52,16 @@ const Color = ({ col_name, url, description }) => {
         <tr>
           <td>
             <h4>{description}</h4>
+          </td>
+        </tr>
+        <tr>
+        {colors.map((sub, subindex) =>
+                    <p key={subindex}>{sub.name}</p>)
+        }
+
+          <td>
+            <h4>{colors.length}</h4>
+
           </td>
         </tr>
       </tbody>
