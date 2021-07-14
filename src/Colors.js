@@ -40,27 +40,29 @@ const Color = ({ col_name, url, description, colors }) => {
     <table>
       <tbody>
         <tr>
-          <td>
+          <td colspan="3">
             <h5>{col_name}</h5>
           </td>
         </tr>
         <tr>
-          <td>
+          <td colspan="6">
             <h5>{url}</h5>
           </td>
         </tr>
         <tr>
-          <td>
+          <td colspan="6">
             <h4>{description}</h4>
           </td>
         </tr>
         <tr>
-          <td>
-            <h4>{colors.length}</h4>
+          <td colspan="6">
+            <h4>There are {colors.length} colours </h4>
           </td>
         </tr>
         {colors.map((sub, subindex) =>
               <tr>  <td key={subindex}>{sub.name}</td>
+                    <td key={subindex}>{sub.rgb}</td>
+                    <td key={subindex}>{sub.number}</td>
               </tr>)
         }
 
