@@ -55,15 +55,16 @@ const Color = ({ col_name, url, description, colors }) => {
           </td>
         </tr>
         <tr>
-        {colors.map((sub, subindex) =>
-                    <p key={subindex}>{sub.name}</p>)
-        }
-
           <td>
             <h4>{colors.length}</h4>
-
           </td>
         </tr>
+        {colors.map((sub, subindex) =>
+              <tr>  <td key={subindex}>{sub.name}</td>
+              </tr>)
+        }
+
+
       </tbody>
     </table>
   );
