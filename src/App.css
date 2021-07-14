@@ -8,6 +8,27 @@
   margin-top: 3em;
 }
 
+.header {
+  background-color: #f4e04d;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #10375c;
+}
+
+table {
+  display: flex;
+  justify-content: left;
+  border: 2px solid blue;
+}
+td {
+  border: 2px solid red;
+  
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
